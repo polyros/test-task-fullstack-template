@@ -84,28 +84,13 @@ test-task-fullstack-template/
     └── tests/          # Добавьте тесты
 ```
 
-## Как сдать
+## Как сдать решение
 
-### 1. Закоммитьте изменения
+1. Запакуйте папки `backend/`, `frontend/` и файл `REVIEW.md` в ZIP-архив
+2. Отправьте архив боту в Telegram
+3. Бот автоматически проверит ваше решение и пришлёт результат
 
-```bash
-git add .
-git commit -m "Решение тестового задания"
-git push -u origin solution
-```
-
-### 2. Создайте Pull Request в ВАШЕМ репозитории
-
-- Перейдите в ваш репозиторий на GitHub
-- Нажмите "Compare & pull request"
-- Base: `main` ← Compare: `solution`
-- Создайте PR с описанием изменений
-
-### 3. Отправьте ссылку боту
-
-После создания PR скопируйте ссылку и отправьте её боту в Telegram.
-
-Пример ссылки: `https://github.com/YOUR_USERNAME/YOUR_REPO/pull/1`
+Проверка включает: линтер, типы, тесты и AI Code Review.
 
 ## Ограничения
 
@@ -128,15 +113,6 @@ git push -u origin solution
 | Корректность исправлений | 30% |
 | Покрытие тестами | 20% |
 | Чистота кода | 10% |
-
-## Автоматическая проверка
-
-После создания PR автоматически запустятся:
-- Backend: pytest + ruff + mypy
-- Frontend: vitest + eslint + tsc
-- AI Code Review
-
-Результаты появятся в комментариях к PR.
 
 ---
 
